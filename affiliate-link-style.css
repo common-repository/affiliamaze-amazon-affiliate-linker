@@ -1,0 +1,97 @@
+/* Stile für den Affiliate-Frame */
+.affiliate-frame {
+    border: 1px solid #ddd;
+    padding: 30px/*15px;*/
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    position: relative; /* Added to position the badge correctly */
+}
+
+.affiliate-badge {
+    background-color: #FF9900;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    font-weight: bold;
+    position: absolute; /* Adjust to correctly position the badge */
+    top: 15px; /* Adjust top positioning for consistency */
+    left: 15px; /* Adjust left positioning for consistency */
+    z-index: 2; /* Ensure badge is above other elements */
+}
+
+.affiliate-book {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.affiliate-image {
+    width: 120px;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+}
+
+.affiliate-info {
+    flex: 1;
+    text-align: center;
+}
+
+.affiliate-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.affiliate-price {
+    font-size: 20px;
+    color: #B12704;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.prime-logo {
+    height: 20px;
+    width: 45px;
+    vertical-align: middle;
+}
+
+.mehrcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.amazonbutton {
+    display: flex; /* Changed to flex to center the text and icon */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 0 auto; /* Center the button */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+    background-color: #f0c14b; /* Button background color */
+    border-color: #a88734 #9c7e31 #846a29; /* Button border color */
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 16px; /* Button padding */
+    border-radius: 3px; /* Rounded corners for the button */
+    cursor: pointer; /* Change mouse cursor on hover */
+}
+
+@media (max-width: 720px) {
+    .affiliate-frame, .mehrcontainer {
+        width: auto;
+    }
+    .affiliate-book {
+        flex-direction: column;
+    }
+    .affiliate-image {
+        margin-bottom: 10px;
+    }
+    .amazonbutton {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px 0; /* Adjust padding */
+    }
+}
